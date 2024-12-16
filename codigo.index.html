@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Círculo Interactivo</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    #circle {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div id="circle"></div>
+
+  <script>
+    const circle = document.getElementById('circle');
+
+    // Cambiar a azul al hacer clic o tocar el círculo
+    circle.addEventListener('click', () => {
+      circle.style.backgroundColor = 'blue';
+    });
+  </script>
+</body>
+</html>
